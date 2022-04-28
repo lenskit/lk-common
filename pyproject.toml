@@ -4,10 +4,9 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lk-common"  ## FIXME Set the project name
+name = "{{cookiecutter.project_name}}"
 authors = [
-    ## FIXME Set the author name(s)
-    {name = "Michael Ekstrand", email = "michaelekstrand@boisestate.edu"}
+    {name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}"}
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -28,7 +27,7 @@ dependencies = [
 [project.urls]
 ## FIXME Correct the URLs
 homepage = "https://lkpy.lenskit.org"
-source = "https://github.com/lenskit/lk-common"
+source = "https://github.com/{{cookiecutter.github_repo}}"
 
 [project.optional-dependencies]
 # These are the dev dependencies we use across LensKit projects.
@@ -59,6 +58,10 @@ doc = [
     "sphinx >= 4.2",
     "sphinxcontrib-bibtex >= 2.0",
 ]
+
+# The name of the module can be changed here
+[tool.flit.module]
+name = "{{cookiecutter.project_slug}}"
 
 # Configure Flit to include test sources, and exclude extra directories
 [tools.flit.sdist]

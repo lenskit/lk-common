@@ -1,0 +1,12 @@
+{
+  "full_name": "Michael Ekstrand",
+  "email": "michaelekstrand@boisestate.edu",
+  "github_username": "mdekstrand",
+  "project_name": "LensKit Boilerplate",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_short_description": "LensKit Boilerplate contains all the boilerplate we use for LensKit projects.",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "version": "0.1.0",
+  "use_pytest": "y",
+  "open_source_license": "MIT license"
+}
