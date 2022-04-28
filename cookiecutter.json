@@ -5,6 +5,7 @@
   "project_name": "LensKit Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "LensKit Boilerplate contains all the boilerplate we use for LensKit projects.",
+  "github_repo": "{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}",
   "version": "0.1.0",
   "include_data": "y"
 }
