@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "{{cookiecutter.project_name}}"
 authors = [
-    {name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}"}
+    {name = "{{cookiecutter.full_name}}", email = "{{cookiecutter.email}}"}
 ]
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -39,6 +39,7 @@ dev = [
     "invoke >=1",
     "requests >=2",
     "sphinx-autobuild >= 2021",
+    "cruft >=2",
 
     # quality control
     "flake8",
