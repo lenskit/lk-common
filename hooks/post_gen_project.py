@@ -2,7 +2,7 @@ import os
 from shutil import rmtree
 
 REMOVE_PATHS = [
-    '{% if cookiecutter.include_data != "pip" %} data {% endif %}',
+    '{% if cookiecutter.include_data != "y" %} data {% endif %}',
 ]
 
 for path in REMOVE_PATHS:
